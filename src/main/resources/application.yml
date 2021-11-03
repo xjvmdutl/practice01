@@ -1,0 +1,30 @@
+naver:
+  url:
+    search:
+      local: https://openapi.naver.com/v1/search/local.json
+      image: https://openapi.naver.com/v1/search/image
+  client:
+    id: YJH21CGt7XCdGA3HuxEA
+    secret: Vw1Zze8az8
+server:
+  port: 9090
+spring:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    defer-datasource-initialization: true
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:mysql://localhost:3306/my_favorite_food
+    username: root
+    password: rla456123@
+    initialization-mode: always
+
+
